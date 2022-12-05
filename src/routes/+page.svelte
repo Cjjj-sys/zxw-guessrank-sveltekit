@@ -9,7 +9,9 @@ function triggerAlert(): void {
 	const alert = {
 		type: 'alert',
 		title: '还没做好捏！',
-		body: '有没有可能后端一行都没写？.',
+		body: '有没有可能后端一行都没写？<br>' +
+		'你的分数是: ' + score + '<br>' +
+		'你选择的考试是: ' + exam,
 	};
 	modalStore.trigger(alert);
 }
@@ -35,8 +37,8 @@ function triggerAlert(): void {
 		<label for="exam">
 		<span>考试</span>
 			<select name="exam" id="color" bind:value={exam}>
-				<option value="red">最近一次物理考试</option>
-				<option value="green">最近一次数学考试</option>
+				<option value="latestPhysicsExam">最近一次物理考试</option>
+				<option value="latestMathExam">最近一次数学考试</option>
 			</select>
 		</label>
 		<button class="btn bg-primary-500 btn-base text-white submit" on:click='{triggerAlert}'>查询</button>
