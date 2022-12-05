@@ -1,17 +1,18 @@
 <script>
+	import '../app.postcss';
 	import Header from './Header.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
-	<Header />
+	<header />
 
 	<main>
 		<slot />
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Powered by <a href="https://kit.svelte.dev">SvelteKit</a></p>
 	</footer>
 </div>
 
