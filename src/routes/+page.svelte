@@ -18,8 +18,8 @@ function triggerAlert(): void {
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>估算你的年级排名</title>
+	<meta name="description" content="估算你的年级排名" />
 </svelte:head>
 
 <section>
@@ -32,7 +32,7 @@ function triggerAlert(): void {
 	<div>
 		<label for="score">
 			<span>分数</span>
-			<input type="text" id="score" bind:value={score} minlength="2" required>
+			<input type="number" id="score" bind:value={score} minlength="2" required>
 		</label>
 		<label for="exam">
 		<span>考试</span>
