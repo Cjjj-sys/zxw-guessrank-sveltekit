@@ -1,12 +1,15 @@
 <script>
+	import '@skeletonlabs/skeleton/themes/theme-skeleton.css'; // <--
 	import '../app.postcss';
 	import Header from './Header.svelte';
+	import '@skeletonlabs/skeleton/styles/all.css';
 	import './styles.css';
+	import { Modal } from '@skeletonlabs/skeleton';
 </script>
 
 <div class="app">
-	<header />
-
+	<Header />
+	<Modal />
 	<main>
 		<slot />
 	</main>
