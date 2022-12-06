@@ -30,6 +30,7 @@ function triggerAlert(): void {
 		仅供参考，不对准确性作任何保障。
 	</h2>
 	<div>
+	<form action="/getRank" method="post">
 		<label for="score">
 			<span>分数</span>
 			<input type="number" id="score" bind:value={score} minlength="2" required>
@@ -41,6 +42,8 @@ function triggerAlert(): void {
 				<option value="latestMathExam">最近一次数学考试</option>
 			</select>
 		</label>
+		<button class="btn bg-primary-500 btn-base text-white submit" >测试查询</button>
+		</form>
 		<button class="btn bg-primary-500 btn-base text-white submit" on:click='{triggerAlert}'>查询</button>
 		<!-- <pre>queue: {JSON.stringify($modalStore, null, 2)}</pre> -->
 	</div>
