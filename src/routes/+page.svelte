@@ -12,6 +12,7 @@ function triggerAlert(): void {
 		body: '有没有可能后端一行都没写？<br>' +
 		'你的分数是: ' + score + '<br>' +
 		'你选择的考试是: ' + exam,
+		
 	};
 	modalStore.trigger(alert);
 }
